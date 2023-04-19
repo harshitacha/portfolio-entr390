@@ -1,0 +1,852 @@
+body{
+    font-family: 'Sora', Arial, sans-serif;
+}
+
+.skip{
+    position: absolute;
+    left: -500px;
+    overflow: hidden;
+
+}
+
+.skip:focus{
+    left: auto;
+    overflow: visible;
+}
+
+.container{
+    height: 680px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #CDC6AE;
+    box-shadow: 0px 0px 10px #00000033;
+}
+
+.container #name{
+    display: flex;
+    font-family: 'Sora', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#mini{
+    display: flex;
+    justify-content: center;
+    font-family: 'Sora', Arial, sans-serif;
+    font-size: 30px;
+}
+
+header{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+#navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#links a{
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    font-family: 'Sora', Arial, sans-serif;
+    text-decoration: none;
+}
+
+nav .active{
+    background-color: #CDC6AE;
+    border: 2px solid;
+    text-decoration: underline;
+}
+
+#links a:hover{
+    border: #CDC6AE 2px solid;
+    background-color: #CDC6AE;
+    box-shadow: 0px 0px 15px #00000033;
+}
+
+
+a:visited{
+    color: black;
+}
+
+#introimg{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: white;
+}
+
+
+#introimg img{
+    width: 120px;
+    padding-bottom: 70px;
+}
+
+#who{
+    display: flex;
+    font-family: 'Sora', Arial, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+#summary{
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Sora', Arial, sans-serif;
+    padding: 10px;
+}
+
+/* GRID */
+
+#music img, #movies img, #tvShows img{
+    position: relative;
+    max-height: 100px;
+    max-width: 80px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #00000033;
+}
+
+#favAlb{
+    font-size: 25px;
+    font-weight: bold;
+    grid-row: 1/span 1;
+    margin: 30px 0px 30px 0px;
+}
+
+#favMov{
+    font-size: 25px;
+    font-weight: bold;
+    grid-row: 2/span 1;
+    margin: 30px 0px 30px 0px;
+}
+
+#movies{
+    grid-row: 2/span 1;
+    grid-column: 2/span 1;
+}
+
+#favTv{
+    font-size: 25px;
+    font-weight: bold;
+    grid-row: 3/span 1;
+    margin: 30px 0px 30px 0px;
+}
+
+#tvShows{
+    grid-row: 3/span 1;
+    grid-column: 2/span 1;
+}
+
+#music figcaption, #tvShows figcaption, #movies figcaption{
+    display: grid;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+#music figure, #movies figure, #tvShows figure{
+    display: grid;
+    justify-items: center;
+}
+
+.mediaImages{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    align-items: center;
+    margin: 50px 10px 50px 10px;
+    justify-items: center;
+}
+
+#music{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+#movies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+
+#tvShows{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+
+/* GRID */
+
+.each{
+    font-family: 'Sora', Arial, sans-serif;
+    border-radius: 20px;
+    border: 2px solid #CDC6AE;
+    padding: 20px;
+    margin: 40px;
+    width: 250px;
+    background-color: #CDC6AE;
+    box-sizing: border-box;
+}
+
+.each:hover{
+    box-shadow: 0px 0px 15px #00000033;
+}
+
+.each p{
+    margin-top: 10px;
+}
+
+.courseTitle{
+    font-weight: bold;
+}
+
+.each{
+    margin-bottom: 15px;
+}
+
+.littleInfo img{
+    width: 75px;
+}
+
+.littleInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#courseHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#courseHeader img{
+    width: 75px;
+}
+
+footer button{
+    background-color: lightgray;
+    border: none;
+    font-family: 'Sora', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer button:hover{
+    box-shadow: 0px 0px 15px #00000033;
+}
+
+footer{
+    padding: 30px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+}
+
+#ham{
+    width: 100px;
+}
+
+.skills{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#techTit{
+    font-weight: bold;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 20px 0px 20px;
+}
+
+#tech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.touch #socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.touch img{
+    width: 150px;
+}
+
+.touch{
+    margin-bottom: 30px;
+}
+
+#spotify{
+    width: 100px;
+    margin: 20px 20px 20px 20px;
+}
+
+#socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    display: flex;
+    font-weight: bold;
+    font-size: 70px;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0px 0px 15px #00000033;
+    background-color: #CDC6AE;
+    height: 200px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#projImg{
+    width: 100px;
+}
+
+.chunkOne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#health, #ext{
+    width: 350px;
+    border: 5px solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#healthImg{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#healthText{
+    display: flex;
+    margin-left: 70px;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+#healthText h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+#healthText a{
+    border: 2px solid #CDC6AE;
+    width: 200px;
+    background-color: #CDC6AE;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#healthText a:hover{
+    box-shadow:  0px 0px 15px #00000033;
+}
+#healthText a p{
+    text-align: center;
+}
+
+.chunkTwo{
+    display: flex;
+    flex-direction: column;
+    background-color: #CDC6AE;
+    padding-top: 30px;
+}
+
+.chunkFour{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 30px;
+}
+
+.chunkTwo #linkImg{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.chunkThree #linkImg{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.chunkFour #linkImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.chunkTwo #healthText a{
+    background-color: white;
+}
+
+.chunkFour #linkImg a{
+    background-color: #CDC6AE;
+    border: #CDC6AE;
+}
+
+#linkLand, #profile{
+    height: 500px;
+    width: 250px;
+    border: 5px solid;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+
+p{
+    line-height: 1.5;
+}
+
+#header{
+    text-decoration: none;
+}
+
+a{
+    color: black;
+}
+
+#projFoot button{
+    background-color: lightgray;
+    border: none;
+    font-family: 'Sora', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#projFoot button:hover{
+    box-shadow: 0px 0px 15px #00000033;
+}
+
+#projFoot{
+    padding: 30px;
+    background-color:lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#contactInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+#contactInfo h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#contactInfo #boxes label{
+    font-style: italic;
+}
+
+#contactInfo #messBox label{
+    font-style: italic;
+}
+
+#simple{
+    display: flex;
+    flex-direction: column;
+}
+
+#boxes input{
+    margin: 10px 0px 10px 0px;
+    width: 300px;
+    height: 30px;
+    margin-right: 30px;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #00000033;
+}
+
+#mess{
+    display: flex;
+    flex-direction: column;
+}
+
+#mess input{
+    margin-top: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+#submit{
+    width: 100px;
+    height: 40px;
+    border: none;
+    margin-top: 10px;
+    border-radius:10px;
+    box-shadow: 0px 0px 15px #00000033;
+}
+
+#subBut{
+    display: flex;
+    align-items: center;
+}
+
+#contact{
+    display: flex;
+    padding: 30px 0px 30px 0px;
+    background-color: #CDC6AE;
+    box-shadow: 0px 0px 15px #00000033;
+    justify-content: center;
+}
+
+#thanks{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding-left: 200px;
+    visibility: hidden;
+}
+
+/* media queries */
+
+@media screen and (min-width: 700px){
+    #navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+    }
+
+    #introimg{
+        padding: unset;
+    }
+
+    .container #name{
+        justify-content: center;
+    }
+
+    #name{
+        font-family: 'Sora', Arial, sans-serif;
+        font-weight: bold;
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+    
+    #introimg img{
+        padding-bottom: unset;
+    }
+
+    #music img, #movies img, #tvShows img{
+        max-height: 500px;
+        max-width: 400px;
+    }
+
+    #botBan{
+        padding-top: 20px;
+    }
+
+    .littleInfo{
+        padding: 30px;
+    }
+
+    #allBoxes{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        justify-items: center;
+        grid-gap: 15px;
+    }
+
+    #list{
+        padding: unset;
+        flex-direction: column;
+    }
+
+    #social{
+        display: flex;
+    }
+
+    .touch #socials{
+        flex-direction: row;
+    }
+
+    #tags{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact{
+        justify-content: flex-start;
+        padding: 20px 0px 20px 20px;
+    }
+
+    #simple{
+        flex-direction: row;
+    }
+
+    #mess{
+        flex-direction: row;
+    }
+
+    #subBut{
+        margin-left: 30px;
+    }
+
+    .chunkTwo #linkImg{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .chunkFour #linkImg{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #healthImg{
+        flex-direction: row;
+    }
+
+    #healthImg img{
+        margin-right: 10px;
+    }
+
+    #healthText{
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    #projects{
+        flex-direction: row
+    }
+
+    #music img, #movies img, #tvShows img{
+        max-height: 300px;
+        max-width: 200px;
+    }
+
+    #music figcaption, #tvShows figcaption{
+        justify-content: unset;
+    }
+
+    #movies figcaption{
+        justify-content: flex-end;
+    }
+
+    #music{
+        grid-column: 1;
+        grid-row: 2;
+        align-items: flex-start;
+    }
+
+
+    #movies{
+        grid-column: 1;
+        grid-row: 4;
+        align-items: flex-start;
+    }
+
+    #tvShows{
+        grid-column: 1;
+        grid-row: 6;
+        align-items: flex-end;
+    }
+
+    #favTv{
+        grid-column: 1;
+        grid-row: 5/span 1;
+    }
+
+    #favMov{
+        grid-row: 3/span 1;
+    }
+
+    .mediaImages{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        justify-items: unset;
+        justify-content: center;
+    }
+
+    #music figure, #tvShows figure{
+        justify-items: start;
+    }
+
+    #movies figure{
+        justify-content: end;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    #allBoxes{
+        grid-template-columns: 25% 25% 25%;
+    }
+
+    .chunkOne{
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .chunkFour{
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    #healthText{
+        margin-bottom: unset;
+    }
+
+    #healthImg{
+        margin-left: 20px;
+    }
+
+    #linkImg{
+        margin-left: 20px;
+    }
+
+    .chunkTwo{
+        flex-direction: row-reverse;
+    }
+
+    .mediaImages{
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        align-items: unset;
+        margin-left: 150px;
+        text-align: center;
+    }
+
+    #favAlb{
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+    }
+
+    #music{
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+        margin-left: 60px;
+    }
+
+    #img1{
+        display: grid;
+        grid-row: 2/span 1;
+    }
+
+    #img2{
+        display: grid;
+        grid-row: 3/span 1;
+    }
+
+    #img3{
+        display: grid;
+        grid-row: 4/span 1;
+    }
+
+    #movies{
+        grid-column: 2/span 1;
+        grid-row: 2/span 3;
+        margin-left: 80px;
+    }
+
+    #img4{
+        display: grid;
+        grid-row: 2/span 1;
+    }
+
+    #img5{
+        display: grid;
+        grid-row: 3/span 1;
+    }
+
+    #img6{
+        display: grid;
+        grid-row: 4/span 1;
+    }
+
+    #tvShows{
+        grid-column: 3/span 1;
+        grid-row: 2;
+        margin-left: 60px;
+    }
+
+    #img7{
+        display: grid;
+        grid-row: 2/span 1;
+    }
+
+    #img8{
+        display: grid;
+        grid-row: 3/span 1;
+    }
+
+    #img9{
+        display: grid;
+        grid-row: 4/span 1;
+    }
+
+    #favMov{
+        grid-column: 2/span 1;
+        grid-row: 1/span 1;
+    }
+
+    #favTv{
+        grid-column: 3/span 1;
+        grid-row: 1/span 1;
+    }
+
+}
